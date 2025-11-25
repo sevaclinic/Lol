@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inara Designer Outfit – Seva Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../styles.css" rel="stylesheet">
+  
+<style>
+.nav-dropdown { position: relative; display: inline-block; }
+.nav-dropdown-toggle { padding: 8px 14px; display:inline-block; }
+.nav-dropdown-menu {
+  display:none; position:absolute; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,.15);
+  min-width:190px; z-index:2000; border-radius:8px; overflow:hidden;
+}
+.nav-dropdown-menu a {
+  display:block; padding:8px 12px; text-decoration:none; color:#111; font-size:14px;
+}
+.nav-dropdown-menu a:hover { background:#f5f5f5; }
+.nav-dropdown:hover .nav-dropdown-menu { display:block; }
+</style>
+
+</head>
+<body data-product-id="product-7">
+  
+<header class="site-header">
+        <div class="site-header-inner">
+          <div class="brand">
+            SEVA CLINIC
+            <span>Ethnic Boutique</span>
+          </div>
+          
+          <nav class="main-nav">
+            <a href="../index.html" style="font-weight:600;">Home</a>
+            <a href="../products.html">Shop</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Policies ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="../terms.html">Terms &amp; Conditions</a>
+                <a href="../privacy.html">Privacy Policy</a>
+                <a href="../refund.html">Refund &amp; Cancellation</a>
+                <a href="../return.html">Return Policy</a>
+                <a href="../shipping.html">Shipping &amp; Delivery</a>
+              </div>
+            </div>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Account ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="../login.html">Login / Signup</a>
+                <a href="../wishlist.html">Wishlist</a>
+                <a href="#" onclick="logoutUser();return false;">Logout</a>
+              </div>
+            </div>
+            <a href="../cart.html" class="cart-link">Cart<span class="cart-count-badge"></span></a>
+          </nav>
+
+        </div>
+      </header>
+
+
+  <main style="max-width:1100px;margin:60px auto 40px;padding:0 16px;">
+    <div class="breadcrumb" style="font-size:13px;margin-bottom:20px;color:#666;">
+      <a href="../index.html" style="color:#666;text-decoration:none;">Home</a> &gt;
+      <a href="../products.html" style="color:#666;text-decoration:none;">Products</a> &gt;
+      <span style="color:#111;">Inara Designer Outfit</span>
+    </div>
+
+    <section style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start;">
+      <div style="flex:1;min-width:260px;">
+        <img src="../images/boutique/pexels-a-darmel-7176687.jpg" alt="Inara Designer Outfit" style="width:100%;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,0.06);">
+      </div>
+      <div style="flex:1;min-width:260px;">
+        <h1 style="font-size:26px;margin-bottom:10px;">Inara Designer Outfit</h1>
+        <p style="font-size:20px;font-weight:600;margin-bottom:16px;">₹11200</p>
+        <p style="font-size:14px;line-height:1.6;color:#555;margin-bottom:16px;">
+          Premium ethnic wear from Seva Clinic Clothing. Tailored for comfort and festive elegance.
+        </p>
+
+        <div style="margin-bottom:18px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:6px;">Select Size</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="size-btn" onclick="selectSize(this)" style="padding:6px 12px;border-radius:999px;border:1px solid #ccc;background:#fff;cursor:pointer;">S</button>
+            <button class="size-btn" onclick="selectSize(this)" style="padding:6px 12px;border-radius:999px;border:1px solid #ccc;background:#fff;cursor:pointer;">M</button>
+            <button class="size-btn" onclick="selectSize(this)" style="padding:6px 12px;border-radius:999px;border:1px solid #ccc;background:#fff;cursor:pointer;">L</button>
+            <button class="size-btn" onclick="selectSize(this)" style="padding:6px 12px;border-radius:999px;border:1px solid #ccc;background:#fff;cursor:pointer;">XL</button>
+          </div>
+          <div style="margin-top:8px;font-size:13px;">
+            <a href="#" onclick="openSizeChart();return false;">View size chart</a>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
+          <a href="../checkout.html" style="background:#000;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;">Buy Now (PhonePe/UPI)</a>
+          <button onclick="addToCart()" style="background:#000;color:#fff;padding:10px 18px;border-radius:999px;border:none;font-weight:600;font-size:14px;cursor:pointer;">Add to Cart</button>
+          <a href="../products.html" style="background:#000;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;">Back to Products</a>
+        </div>
+        <p style="font-size:12px;color:#777;">COD / exchange as per store policy.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:40px;">
+      <h3 style="margin-bottom:12px;">You may also like</h3>
+      <div style="display:flex;gap:10px;overflow-x:auto;padding:6px 0;">
+        <img src="../images/boutique/pexels-a-darmel-7176687.jpg" alt="Inara Designer Outfit" style="height:140px;border-radius:10px;">
+      </div>
+    </section>
+  
+<section style="margin-top:40px;">
+  <h3>Customer Reviews</h3>
+  <div id="reviews_product-7" style="margin-bottom:16px;"></div>
+
+  <h4>Write a Review</h4>
+  <textarea id="review_input_product-7" style="width:100%;height:80px;padding:10px;border-radius:8px;border:1px solid #ccc;"></textarea>
+  <button onclick="submitReview_product-7()" style="margin-top:10px;padding:10px 18px;background:#000;color:#fff;border:none;border-radius:8px;">Submit Review</button>
+</section>
+
+<script>
+function loadReviews_product-7(){
+  let r=JSON.parse(localStorage.getItem("reviews_product-7")||"[]");
+  let box=document.getElementById("reviews_product-7");
+  box.innerHTML = r.map(x=>"<div style='padding:10px;border-bottom:1px solid #eee;'>"+x+"</div>").join("");
+}
+function submitReview_product-7(){
+  let input=document.getElementById("review_input_product-7");
+  let text=input.value.trim();
+  if(!text) return;
+  let r=JSON.parse(localStorage.getItem("reviews_product-7")||"[]");
+  r.push(text);
+  localStorage.setItem("reviews_product-7", JSON.stringify(r));
+  input.value="";
+  loadReviews_product-7();
+}
+document.addEventListener("DOMContentLoaded", loadReviews_product-7);
+</script>
+
+</main>
+
+  <a href="../cart.html" style="position:fixed;top:12px;right:12px;background:#000;color:#fff;padding:10px 18px;border-radius:999px;z-index:5000;text-decoration:none;font-size:13px;">Cart</a>
+
+  <div id="sizeChartModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.5);justify-content:center;align-items:center;z-index:6000;">
+    <div style="background:#fff;padding:20px;border-radius:12px;width:90%;max-width:400px;">
+      <h2>Size Chart</h2>
+      <p>S: 34-36 bust</p>
+      <p>M: 36-38 bust</p>
+      <p>L: 38-40 bust</p>
+      <p>XL: 40-42 bust</p>
+      <button onclick="closeSizeChart()"
+        style="margin-top:12px;padding:8px 16px;background:#111;color:#fff;border:none;border-radius:6px;">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function selectSize(btn){
+      document.querySelectorAll('.size-btn').forEach(function(b){ b.style.background='#fff'; b.style.color='#000'; });
+      btn.style.background='#000'; btn.style.color='#fff';
+    }
+    function openSizeChart(){ document.getElementById('sizeChartModal').style.display='flex'; }
+    function closeSizeChart(){ document.getElementById('sizeChartModal').style.display='none'; }
+    // removed inline addToCart (using global)catch(e){}
+      alert('Added to cart');
+      return false;
+    }
+  </script>
+<script src="../script.js"></script>
+</body>
+</html>
