@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wishlist – Seva Clinic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+        <div class="site-header-inner">
+          <div class="brand">
+            SEVA CLINIC
+            <span>Ethnic Boutique</span>
+          </div>
+          
+          <nav class="main-nav">
+            <a href="index.html" style="font-weight:600;">Home</a>
+            <a href="products.html">Shop</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Policies ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund &amp; Cancellation</a>
+                <a href="return.html">Return Policy</a>
+                <a href="shipping.html">Shipping &amp; Delivery</a>
+              </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Account ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="login.html">Login / Signup</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="#" onclick="logoutUser();return false;">Logout</a>
+              </div>
+            </div>
+            <a href="cart.html" class="cart-link">Cart<span class="cart-count-badge"></span></a>
+          </nav>
+
+        </div>
+      </header>
+<main style="max-width:1100px;margin:40px auto;padding:0 16px;">
+<div class="breadcrumb" style="font-size:13px;margin-bottom:20px;color:#666;">
+<a href="index.html" style="color:#666;text-decoration:none;">Home</a> &gt; <span>Wishlist</span>
+</div>
+
+<div style="background:#fff;padding:24px;border-radius:14px;max-width:700px;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+<h2>My Wishlist</h2>
+<p>No items yet.</p>
+</div>
+
+  <div id="wishlist-container"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

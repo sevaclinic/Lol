@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cart – Seva Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<header class="site-header">
+        <div class="site-header-inner">
+          <div class="brand">
+            SEVA CLINIC
+            <span>Ethnic Boutique</span>
+          </div>
+          
+          <nav class="main-nav">
+            <a href="index.html" style="font-weight:600;">Home</a>
+            <a href="products.html">Shop</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Policies ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund &amp; Cancellation</a>
+                <a href="return.html">Return Policy</a>
+                <a href="shipping.html">Shipping &amp; Delivery</a>
+              </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Account ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="login.html">Login / Signup</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="#" onclick="logoutUser();return false;">Logout</a>
+              </div>
+            </div>
+            <a href="cart.html" class="cart-link">Cart<span class="cart-count-badge"></span></a>
+          </nav>
+
+        </div>
+      </header>
+<main style="max-width:1100px;margin:40px auto;padding:0 16px;">
+  <div class="breadcrumb" style="font-size:13px;margin-bottom:20px;color:#666;">
+    <a href="index.html" style="color:#666;text-decoration:none;">Home</a> &gt; <span>Cart</span>
+  </div>
+  <section style="background:#fff;padding:24px;border-radius:16px;box-shadow:0 10px 30px rgba(15,23,42,0.12);">
+    <h1 style="font-size:22px;margin-bottom:8px;">Your Cart</h1>
+    <p id="cart-empty" style="color:#6b7280;margin-bottom:16px;">Your cart is currently empty.</p>
+    <div id="cart-items"></div>
+    <div style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div style="font-size:15px;">
+        Total: <strong id="cart-total">₹0</strong>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button type="button" onclick="window.location.href='products.html'" 
+          style="padding:10px 16px;border-radius:999px;border:1px solid #d1d5db;background:#fff;color:#111827;cursor:pointer;font-size:14px;">
+          Continue Shopping
+        </button>
+        <button type="button" onclick="window.location.href='checkout.html'"
+          style="padding:10px 18px;border-radius:999px;border:none;background:#111827;color:#fff;font-weight:600;cursor:pointer;font-size:14px;">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

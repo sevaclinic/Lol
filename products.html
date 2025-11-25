@@ -1,0 +1,922 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Shop – Seva Clinic</title>
+      <link rel="stylesheet" href="styles.css" />
+    
+<style>
+.nav-dropdown { position: relative; display: inline-block; }
+.nav-dropdown-toggle { padding: 8px 14px; display:inline-block; }
+.nav-dropdown-menu {
+  display:none; position:absolute; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,.15);
+  min-width:190px; z-index:2000; border-radius:8px; overflow:hidden;
+}
+.nav-dropdown-menu a {
+  display:block; padding:8px 12px; text-decoration:none; color:#111; font-size:14px;
+}
+.nav-dropdown-menu a:hover { background:#f5f5f5; }
+.nav-dropdown:hover .nav-dropdown-menu { display:block; }
+</style>
+
+</head>
+    <body>
+      <header class="site-header">
+        <div class="site-header-inner">
+          <div class="brand">
+            SEVA CLINIC
+            <span>Ethnic Boutique</span>
+          </div>
+          
+          <nav class="main-nav">
+            <a href="index.html" style="font-weight:600;">Home</a>
+            <a href="products.html">Shop</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Policies ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund &amp; Cancellation</a>
+                <a href="return.html">Return Policy</a>
+                <a href="shipping.html">Shipping &amp; Delivery</a>
+              </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Account ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="login.html">Login / Signup</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="#" onclick="logoutUser();return false;">Logout</a>
+              </div>
+            </div>
+            <a href="cart.html" class="cart-link">Cart<span class="cart-count-badge"></span></a>
+          </nav>
+
+        </div>
+      </header>
+
+<main class="page">
+  <h1 class="section-title">Shop all products</h1>
+  <p class="section-subtitle">
+    Browse our full ethnic collection. For size or fabric questions you can contact us on WhatsApp before ordering.
+  </p>
+  <div class="grid grid-3">
+
+    <article class="product-card">
+      <a href="product_pages/product-1.html">
+        <img src="images/boutique/1c0ac85d-3be9-43c8-bed0-3bdf22e581bc.jpg" alt="Noor Couture Set">
+        <h3>Noor Couture Set</h3>
+        <div class="product-price">₹14300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-10.html">
+        <img src="images/boutique/pexels-abhishek-kumar-100706288-9419023.jpg" alt="Reeva Classic Edit">
+        <h3>Reeva Classic Edit</h3>
+        <div class="product-price">₹16300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-11.html">
+        <img src="images/boutique/pexels-abhishek-kumar-100706288-9419108.jpg" alt="Ira Couture Set">
+        <h3>Ira Couture Set</h3>
+        <div class="product-price">₹15600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-12.html">
+        <img src="images/boutique/pexels-akash-kumar-apt-2076272848-34767007.jpg" alt="Amaira Signature Edit">
+        <h3>Amaira Signature Edit</h3>
+        <div class="product-price">₹12300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-13.html">
+        <img src="images/boutique/pexels-alinari-2333719.jpg" alt="Charvi Occasion Wear">
+        <h3>Charvi Occasion Wear</h3>
+        <div class="product-price">₹15200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-14.html">
+        <img src="images/boutique/pexels-alokkd1-11867168.jpg" alt="Mahira Festive Ensemble">
+        <h3>Mahira Festive Ensemble</h3>
+        <div class="product-price">₹22900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-15.html">
+        <img src="images/boutique/pexels-altinduvakmoda-18861217.jpg" alt="Vanya Luxury Edit">
+        <h3>Vanya Luxury Edit</h3>
+        <div class="product-price">₹12700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-16.html">
+        <img src="images/boutique/pexels-anandumohanmr-31540068.jpg" alt="Aanya Heritage Piece">
+        <h3>Aanya Heritage Piece</h3>
+        <div class="product-price">₹12700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-17.html">
+        <img src="images/boutique/pexels-anastasia-shuraeva-8751524.jpg" alt="Advika Designer Outfit">
+        <h3>Advika Designer Outfit</h3>
+        <div class="product-price">₹13400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-18.html">
+        <img src="images/boutique/pexels-anastasia-shuraeva-8752655.jpg" alt="Ridhima Premium Look">
+        <h3>Ridhima Premium Look</h3>
+        <div class="product-price">₹17200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-19.html">
+        <img src="images/boutique/pexels-anastasia-shuraeva-8752672.jpg" alt="Sanjh Statement Style">
+        <h3>Sanjh Statement Style</h3>
+        <div class="product-price">₹11000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-2.html">
+        <img src="images/boutique/6c79005b-0d9b-4000-a859-52b3c99c746a.jpg" alt="Zara Signature Edit">
+        <h3>Zara Signature Edit</h3>
+        <div class="product-price">₹13100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-20.html">
+        <img src="images/boutique/pexels-anastasia-shuraeva-8752674.jpg" alt="Prisha Classic Edit">
+        <h3>Prisha Classic Edit</h3>
+        <div class="product-price">₹21700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-21.html">
+        <img src="images/boutique/pexels-anntarazevich-8229208.jpg" alt="Aarohi Couture Set">
+        <h3>Aarohi Couture Set</h3>
+        <div class="product-price">₹23200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-22.html">
+        <img src="images/boutique/pexels-asphotography-291759.jpg" alt="Myra Signature Edit">
+        <h3>Myra Signature Edit</h3>
+        <div class="product-price">₹18800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-23.html">
+        <img src="images/boutique/pexels-bharatkuiper-17040888.jpg" alt="Zaina Occasion Wear">
+        <h3>Zaina Occasion Wear</h3>
+        <div class="product-price">₹19100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-24.html">
+        <img src="images/boutique/pexels-bhoopal-m-642163-28054615.jpg" alt="Lavanya Festive Ensemble">
+        <h3>Lavanya Festive Ensemble</h3>
+        <div class="product-price">₹13800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-25.html">
+        <img src="images/boutique/pexels-bonaventure-fernandez-744363-27790205.jpg" alt="Ruhani Luxury Edit">
+        <h3>Ruhani Luxury Edit</h3>
+        <div class="product-price">₹23300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-26.html">
+        <img src="images/boutique/pexels-brijesh-kamal-1121239-2119095.jpg" alt="Nayra Heritage Piece">
+        <h3>Nayra Heritage Piece</h3>
+        <div class="product-price">₹12300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-27.html">
+        <img src="images/boutique/pexels-daredevil-27139278.jpg" alt="Noor Designer Outfit">
+        <h3>Noor Designer Outfit</h3>
+        <div class="product-price">₹10600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-28.html">
+        <img src="images/boutique/pexels-darkmodecinema-19567859.jpg" alt="Zara Premium Look">
+        <h3>Zara Premium Look</h3>
+        <div class="product-price">₹11800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-29.html">
+        <img src="images/boutique/pexels-darshan-peeal-1443586-2784078.jpg" alt="Mehfil Statement Style">
+        <h3>Mehfil Statement Style</h3>
+        <div class="product-price">₹25900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-3.html">
+        <img src="images/boutique/931197f5-e9a3-4b12-97ba-462155c22012.jpg" alt="Mehfil Occasion Wear">
+        <h3>Mehfil Occasion Wear</h3>
+        <div class="product-price">₹18100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-30.html">
+        <img src="images/boutique/pexels-dhanno-19556879.jpg" alt="Rooh Classic Edit">
+        <h3>Rooh Classic Edit</h3>
+        <div class="product-price">₹18600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-31.html">
+        <img src="images/boutique/pexels-dhanno-20702672.jpg" alt="Aafreen Couture Set">
+        <h3>Aafreen Couture Set</h3>
+        <div class="product-price">₹18100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-32.html">
+        <img src="images/boutique/pexels-dhanno-20702673.jpg" alt="Sitara Signature Edit">
+        <h3>Sitara Signature Edit</h3>
+        <div class="product-price">₹12700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-33.html">
+        <img src="images/boutique/pexels-dhanno-20702674.jpg" alt="Inara Occasion Wear">
+        <h3>Inara Occasion Wear</h3>
+        <div class="product-price">₹19600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-34.html">
+        <img src="images/boutique/pexels-dhanno-20702676.jpg" alt="Samaira Festive Ensemble">
+        <h3>Samaira Festive Ensemble</h3>
+        <div class="product-price">₹14000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-35.html">
+        <img src="images/boutique/pexels-dream_-makkerzz-1603229-28428044.jpg" alt="Aarvi Luxury Edit">
+        <h3>Aarvi Luxury Edit</h3>
+        <div class="product-price">₹9800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-36.html">
+        <img src="images/boutique/pexels-f4fotografie-3594582.jpg" alt="Reeva Heritage Piece">
+        <h3>Reeva Heritage Piece</h3>
+        <div class="product-price">₹16000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-37.html">
+        <img src="images/boutique/pexels-framesbyambro-11797315.jpg" alt="Ira Designer Outfit">
+        <h3>Ira Designer Outfit</h3>
+        <div class="product-price">₹18200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-38.html">
+        <img src="images/boutique/pexels-framesbyambro-13178920.jpg" alt="Amaira Premium Look">
+        <h3>Amaira Premium Look</h3>
+        <div class="product-price">₹20500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-39.html">
+        <img src="images/boutique/pexels-gajiwala-saree-506651903-32515965.jpg" alt="Charvi Statement Style">
+        <h3>Charvi Statement Style</h3>
+        <div class="product-price">₹12600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-4.html">
+        <img src="images/boutique/pexels-1054048-10214422.jpg" alt="Rooh Festive Ensemble">
+        <h3>Rooh Festive Ensemble</h3>
+        <div class="product-price">₹15700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-40.html">
+        <img src="images/boutique/pexels-gajiwala-saree-506651903-32515970.jpg" alt="Mahira Classic Edit">
+        <h3>Mahira Classic Edit</h3>
+        <div class="product-price">₹20300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-41.html">
+        <img src="images/boutique/pexels-gesel-1386897.jpg" alt="Vanya Couture Set">
+        <h3>Vanya Couture Set</h3>
+        <div class="product-price">₹19100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-42.html">
+        <img src="images/boutique/pexels-gursher-gill-63702010-13661843.jpg" alt="Aanya Signature Edit">
+        <h3>Aanya Signature Edit</h3>
+        <div class="product-price">₹16500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-43.html">
+        <img src="images/boutique/pexels-guru-praveen-169878542-15181112.jpg" alt="Advika Occasion Wear">
+        <h3>Advika Occasion Wear</h3>
+        <div class="product-price">₹19200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-44.html">
+        <img src="images/boutique/pexels-gustavo-fring-8770996.jpg" alt="Ridhima Festive Ensemble">
+        <h3>Ridhima Festive Ensemble</h3>
+        <div class="product-price">₹21700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-45.html">
+        <img src="images/boutique/pexels-himanshu-singh-148036179-33048506.jpg" alt="Sanjh Luxury Edit">
+        <h3>Sanjh Luxury Edit</h3>
+        <div class="product-price">₹22600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-46.html">
+        <img src="images/boutique/pexels-iqram-14746217.jpg" alt="Prisha Heritage Piece">
+        <h3>Prisha Heritage Piece</h3>
+        <div class="product-price">₹20000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-47.html">
+        <img src="images/boutique/pexels-ivette-torres-162553-698889.jpg" alt="Aarohi Designer Outfit">
+        <h3>Aarohi Designer Outfit</h3>
+        <div class="product-price">₹17600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-48.html">
+        <img src="images/boutique/pexels-jennifer-murray-402778-1200643.jpg" alt="Myra Premium Look">
+        <h3>Myra Premium Look</h3>
+        <div class="product-price">₹23400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-49.html">
+        <img src="images/boutique/pexels-jonathanborba-3014853.jpg" alt="Zaina Statement Style">
+        <h3>Zaina Statement Style</h3>
+        <div class="product-price">₹15200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-5.html">
+        <img src="images/boutique/pexels-1054048-11702815.jpg" alt="Aafreen Luxury Edit">
+        <h3>Aafreen Luxury Edit</h3>
+        <div class="product-price">₹13100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-50.html">
+        <img src="images/boutique/pexels-kalistro666-28080455.jpg" alt="Lavanya Classic Edit">
+        <h3>Lavanya Classic Edit</h3>
+        <div class="product-price">₹15400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-51.html">
+        <img src="images/boutique/pexels-kalistro666-34622264.jpg" alt="Ruhani Couture Set">
+        <h3>Ruhani Couture Set</h3>
+        <div class="product-price">₹15000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-52.html">
+        <img src="images/boutique/pexels-kevinshrmasc-29538465.jpg" alt="Nayra Signature Edit">
+        <h3>Nayra Signature Edit</h3>
+        <div class="product-price">₹22900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-53.html">
+        <img src="images/boutique/pexels-khaas-photographer-3700378-31832653.jpg" alt="Noor Occasion Wear">
+        <h3>Noor Occasion Wear</h3>
+        <div class="product-price">₹22500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-54.html">
+        <img src="images/boutique/pexels-krishna-15179843.jpg" alt="Zara Festive Ensemble">
+        <h3>Zara Festive Ensemble</h3>
+        <div class="product-price">₹20700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-55.html">
+        <img src="images/boutique/pexels-krishna-15179845.jpg" alt="Mehfil Luxury Edit">
+        <h3>Mehfil Luxury Edit</h3>
+        <div class="product-price">₹18800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-56.html">
+        <img src="images/boutique/pexels-kushan-perera-95408363-15298624.jpg" alt="Rooh Heritage Piece">
+        <h3>Rooh Heritage Piece</h3>
+        <div class="product-price">₹17100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-57.html">
+        <img src="images/boutique/pexels-kyleroxas-2236416.jpg" alt="Aafreen Designer Outfit">
+        <h3>Aafreen Designer Outfit</h3>
+        <div class="product-price">₹21700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-58.html">
+        <img src="images/boutique/pexels-manishjangid-28943477.jpg" alt="Sitara Premium Look">
+        <h3>Sitara Premium Look</h3>
+        <div class="product-price">₹25000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-59.html">
+        <img src="images/boutique/pexels-manishjangid-28943570.jpg" alt="Inara Statement Style">
+        <h3>Inara Statement Style</h3>
+        <div class="product-price">₹16700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-6.html">
+        <img src="images/boutique/pexels-a-darmel-7176438.jpg" alt="Sitara Heritage Piece">
+        <h3>Sitara Heritage Piece</h3>
+        <div class="product-price">₹9300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-60.html">
+        <img src="images/boutique/pexels-manishjangid-28943579.jpg" alt="Samaira Classic Edit">
+        <h3>Samaira Classic Edit</h3>
+        <div class="product-price">₹18700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-61.html">
+        <img src="images/boutique/pexels-mehedi-hasan-214983325-30703859.jpg" alt="Aarvi Couture Set">
+        <h3>Aarvi Couture Set</h3>
+        <div class="product-price">₹21800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-62.html">
+        <img src="images/boutique/pexels-mehedi-hasan-214983325-30703872.jpg" alt="Reeva Signature Edit">
+        <h3>Reeva Signature Edit</h3>
+        <div class="product-price">₹21000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-63.html">
+        <img src="images/boutique/pexels-michaelhidaeki-34651313.jpg" alt="Ira Occasion Wear">
+        <h3>Ira Occasion Wear</h3>
+        <div class="product-price">₹20200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-64.html">
+        <img src="images/boutique/pexels-minan1398-752803.jpg" alt="Amaira Festive Ensemble">
+        <h3>Amaira Festive Ensemble</h3>
+        <div class="product-price">₹16900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-65.html">
+        <img src="images/boutique/pexels-minan1398-953719.jpg" alt="Charvi Luxury Edit">
+        <h3>Charvi Luxury Edit</h3>
+        <div class="product-price">₹25500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-66.html">
+        <img src="images/boutique/pexels-mk-1182794846-22064227.jpg" alt="Mahira Heritage Piece">
+        <h3>Mahira Heritage Piece</h3>
+        <div class="product-price">₹15600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-67.html">
+        <img src="images/boutique/pexels-mk-1182794846-22431192.jpg" alt="Vanya Designer Outfit">
+        <h3>Vanya Designer Outfit</h3>
+        <div class="product-price">₹23300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-68.html">
+        <img src="images/boutique/pexels-neha-mishra-1851906907-28512776.jpg" alt="Aanya Premium Look">
+        <h3>Aanya Premium Look</h3>
+        <div class="product-price">₹17000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-69.html">
+        <img src="images/boutique/pexels-neha-mishra-1851906907-28512787.jpg" alt="Advika Statement Style">
+        <h3>Advika Statement Style</h3>
+        <div class="product-price">₹26000</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-7.html">
+        <img src="images/boutique/pexels-a-darmel-7176687.jpg" alt="Inara Designer Outfit">
+        <h3>Inara Designer Outfit</h3>
+        <div class="product-price">₹11200</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-70.html">
+        <img src="images/boutique/pexels-nirav-jani-1955297-34107820.jpg" alt="Ridhima Classic Edit">
+        <h3>Ridhima Classic Edit</h3>
+        <div class="product-price">₹16800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-71.html">
+        <img src="images/boutique/pexels-officialsourovsarker-34313235.jpg" alt="Sanjh Couture Set">
+        <h3>Sanjh Couture Set</h3>
+        <div class="product-price">₹16800</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-72.html">
+        <img src="images/boutique/pexels-orione-conceicao-1531154-3014764.jpg" alt="Prisha Signature Edit">
+        <h3>Prisha Signature Edit</h3>
+        <div class="product-price">₹21500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-73.html">
+        <img src="images/boutique/pexels-pankaj-gosai-878171-34211596.jpg" alt="Aarohi Occasion Wear">
+        <h3>Aarohi Occasion Wear</h3>
+        <div class="product-price">₹17500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-74.html">
+        <img src="images/boutique/pexels-picturebymv-27212065.jpg" alt="Myra Festive Ensemble">
+        <h3>Myra Festive Ensemble</h3>
+        <div class="product-price">₹25700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-75.html">
+        <img src="images/boutique/pexels-picturebymv-27455008.jpg" alt="Zaina Luxury Edit">
+        <h3>Zaina Luxury Edit</h3>
+        <div class="product-price">₹17700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-76.html">
+        <img src="images/boutique/pexels-pixabay-160668.jpg" alt="Lavanya Heritage Piece">
+        <h3>Lavanya Heritage Piece</h3>
+        <div class="product-price">₹15300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-77.html">
+        <img src="images/boutique/pexels-prajapatisanju-12062663.jpg" alt="Ruhani Designer Outfit">
+        <h3>Ruhani Designer Outfit</h3>
+        <div class="product-price">₹19400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-78.html">
+        <img src="images/boutique/pexels-prashant-purbey-295721470-15561976.jpg" alt="Nayra Premium Look">
+        <h3>Nayra Premium Look</h3>
+        <div class="product-price">₹16600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-79.html">
+        <img src="images/boutique/pexels-rdne-7685572.jpg" alt="Noor Statement Style">
+        <h3>Noor Statement Style</h3>
+        <div class="product-price">₹25400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-8.html">
+        <img src="images/boutique/pexels-ab_h_i-s_h_ek_09-283673767-30004190.jpg" alt="Samaira Premium Look">
+        <h3>Samaira Premium Look</h3>
+        <div class="product-price">₹14900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-80.html">
+        <img src="images/boutique/pexels-rdne-7685633.jpg" alt="Zara Classic Edit">
+        <h3>Zara Classic Edit</h3>
+        <div class="product-price">₹20900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-81.html">
+        <img src="images/boutique/pexels-safana-2151149986-34816598.jpg" alt="Mehfil Couture Set">
+        <h3>Mehfil Couture Set</h3>
+        <div class="product-price">₹24500</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-82.html">
+        <img src="images/boutique/pexels-samarth-1139450.jpg" alt="Rooh Signature Edit">
+        <h3>Rooh Signature Edit</h3>
+        <div class="product-price">₹15900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-83.html">
+        <img src="images/boutique/pexels-shesunze-shamaye-2153737442-34812886.jpg" alt="Aafreen Occasion Wear">
+        <h3>Aafreen Occasion Wear</h3>
+        <div class="product-price">₹17600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-84.html">
+        <img src="images/boutique/pexels-shootsaga-30809730.jpg" alt="Sitara Festive Ensemble">
+        <h3>Sitara Festive Ensemble</h3>
+        <div class="product-price">₹10600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-85.html">
+        <img src="images/boutique/pexels-skgphotography-2053852.jpg" alt="Inara Luxury Edit">
+        <h3>Inara Luxury Edit</h3>
+        <div class="product-price">₹12900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-86.html">
+        <img src="images/boutique/pexels-subhrajyoti-paul-447200412-32161002.jpg" alt="Samaira Heritage Piece">
+        <h3>Samaira Heritage Piece</h3>
+        <div class="product-price">₹12400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-87.html">
+        <img src="images/boutique/pexels-swarupdhar-13334341.jpg" alt="Aarvi Designer Outfit">
+        <h3>Aarvi Designer Outfit</h3>
+        <div class="product-price">₹17300</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-88.html">
+        <img src="images/boutique/pexels-tavsiapparel-28213774.jpg" alt="Reeva Premium Look">
+        <h3>Reeva Premium Look</h3>
+        <div class="product-price">₹15100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-89.html">
+        <img src="images/boutique/pexels-th3warhawk-10512648.jpg" alt="Ira Statement Style">
+        <h3>Ira Statement Style</h3>
+        <div class="product-price">₹11600</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-9.html">
+        <img src="images/boutique/pexels-abhishek-kumar-100706288-9418537.jpg" alt="Aarvi Statement Style">
+        <h3>Aarvi Statement Style</h3>
+        <div class="product-price">₹17900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-90.html">
+        <img src="images/boutique/pexels-tuyishime-ezekiel-1698852757-34785572.jpg" alt="Amaira Classic Edit">
+        <h3>Amaira Classic Edit</h3>
+        <div class="product-price">₹13900</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-91.html">
+        <img src="images/boutique/pexels-upenderphotography-32441366.jpg" alt="Charvi Couture Set">
+        <h3>Charvi Couture Set</h3>
+        <div class="product-price">₹10100</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-92.html">
+        <img src="images/boutique/pexels-vatsalmandavia-15026771.jpg" alt="Mahira Signature Edit">
+        <h3>Mahira Signature Edit</h3>
+        <div class="product-price">₹17700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-93.html">
+        <img src="images/boutique/pexels-vikashkr50-27155546.jpg" alt="Vanya Occasion Wear">
+        <h3>Vanya Occasion Wear</h3>
+        <div class="product-price">₹11700</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+    <article class="product-card">
+      <a href="product_pages/product-94.html">
+        <img src="images/boutique/pexels-yankrukov-8819457.jpg" alt="Aanya Festive Ensemble">
+        <h3>Aanya Festive Ensemble</h3>
+        <div class="product-price">₹13400</div>
+        <div class="product-link">View details →</div>
+      </a>
+    </article>
+
+  </div>
+</main>
+
+      <footer class="site-footer">
+        © Seva Clinic Clothing – Ethnic Boutique. All rights reserved.
+      </footer>
+    <a href="../cart.html" style="position:fixed;top:10px;right:10px;background:#000;color:#fff;padding:10px 16px;border-radius:8px;z-index:9999;text-decoration:none;">Cart</a><script src="script.js"></script>
+</body>
+    </html>

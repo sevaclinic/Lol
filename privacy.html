@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<!-- SEO -->
+<meta name="description" content="Premium Indian ethnic wear — sarees, kurtis, lehengas from Seva Clinic Clothing.">
+<meta property="og:title" content="Seva Clinic Clothing">
+<meta property="og:description" content="Shop premium ethnic wear online.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Privacy Policy - Seva Clinic Clothing</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background: #f7f7f7;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #444;
+        }
+        a {
+            color: #0066cc;
+        }
+    </style>
+
+<style>
+.zoomable:hover { 
+  transform: scale(1.05); 
+  transition: transform .25s ease; 
+}
+</style>
+<script>
+function quickView(img, title, price){
+  document.getElementById('qv-img').src = img;
+  document.getElementById('qv-title').innerText = title;
+  document.getElementById('qv-price').innerText = price;
+  document.getElementById('quickViewModal').style.display='flex';
+}
+function closeQuickView(){
+  document.getElementById('quickViewModal').style.display='none';
+}
+</script>
+
+
+<style>
+.menu-btn {
+  position:fixed; top:20px; left:20px; z-index:2000;
+  background:#111; color:#fff; padding:10px 14px; border-radius:6px; cursor:pointer;
+}
+.drawer {
+  position:fixed; top:0; left:-260px; width:240px; height:100%;
+  background:#fff; padding:20px; box-shadow:4px 0 20px rgba(0,0,0,0.2);
+  transition:left .3s ease; z-index:3000;
+}
+.drawer.open { left:0; }
+.drawer a { display:block; margin:14px 0; color:#111; text-decoration:none; font-weight:600; }
+.dark .drawer { background:#1c1c1c; }
+.dark .drawer a { color:#eee; }
+</style>
+
+<script>
+function openMenu() {
+  document.getElementById('drawer').classList.add('open');
+}
+function closeMenu() {
+  document.getElementById('drawer').classList.remove('open');
+}
+</script>
+
+
+<style>
+@media(max-width:700px){
+  .mobile-buybar{
+    position:fixed;bottom:0;left:0;width:100%;background:#111;color:#fff;
+    padding:14px;display:flex;justify-content:space-between;align-items:center;
+    z-index:4000;
+  }
+  .mobile-buybar button{
+    background:#fff;color:#111;padding:10px 18px;border:none;border-radius:6px;font-weight:700;
+  }
+}
+</style>
+<script>
+function buyNowUPI(){
+  window.location.href='upi://pay?pa=7278177592@upi&pn=SevaClinic&cu=INR';
+}
+</script>
+
+
+<style>
+@keyframes fly {
+  from {opacity:1; transform:translate(0,0);}
+  to {opacity:0; transform:translate(150px,-200px);}
+}
+</style>
+<script>
+function flyToCart(img){
+  let clone = img.cloneNode(true);
+  clone.style.position='fixed';
+  clone.style.top = img.getBoundingClientRect().top+'px';
+  clone.style.left = img.getBoundingClientRect().left+'px';
+  clone.style.width='80px';
+  clone.style.height='100px';
+  clone.style.animation='fly 1s forwards';
+  document.body.appendChild(clone);
+  setTimeout(()=>clone.remove(),1000);
+}
+</script>
+
+
+<style>
+.cart-icon{
+ position:fixed;top:20px;right:20px;z-index:3000;
+ background:#111;color:#fff;padding:10px 14px;border-radius:50px;
+ font-size:18px;cursor:pointer;display:flex;align-items:center;gap:6px;
+}
+.cart-count{
+ background:red;color:#fff;border-radius:50%;padding:4px 8px;font-size:12px;
+}
+</style>
+<script>
+let cartCount=0;
+function addToCart(){
+ cartCount++;
+ document.getElementById('cartCount').innerText=cartCount;
+}
+</script>
+
+
+<style>
+.fullscreen-zoom{
+ display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+ background:rgba(0,0,0,0.9);z-index:6000;justify-content:center;align-items:center;
+}
+.fullscreen-zoom img{
+ max-width:90%;max-height:90%;border-radius:8px;
+}
+</style>
+<script>
+function openFull(img){
+ document.getElementById('zoomFullImg').src=img.src;
+ document.getElementById('zoomFull').style.display='flex';
+}
+function closeFull(){
+ document.getElementById('zoomFull').style.display='none';
+}
+</script>
+
+<div id="zoomFull" class="fullscreen-zoom" onclick="closeFull()">
+ <img id="zoomFullImg" src="" onclick='openFull(this)'>
+</div>
+
+</head>
+<body>
+<header class="site-header">
+        <div class="site-header-inner">
+          <div class="brand">
+            SEVA CLINIC
+            <span>Ethnic Boutique</span>
+          </div>
+          
+          <nav class="main-nav">
+            <a href="index.html" style="font-weight:600;">Home</a>
+            <a href="products.html">Shop</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Policies ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund &amp; Cancellation</a>
+                <a href="return.html">Return Policy</a>
+                <a href="shipping.html">Shipping &amp; Delivery</a>
+              </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-dropdown">
+              <button class="nav-dropdown-toggle" type="button">Account ▾</button>
+              <div class="nav-dropdown-menu">
+                <a href="login.html">Login / Signup</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="#" onclick="logoutUser();return false;">Logout</a>
+              </div>
+            </div>
+            <a href="cart.html" class="cart-link">Cart<span class="cart-count-badge"></span></a>
+          </nav>
+
+        </div>
+      </header>
+<style>
+#loaderOverlay{
+ position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;
+ display:flex;justify-content:center;align-items:center;z-index:9000;
+ font-size:22px;font-weight:700;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", ()=>{
+ setTimeout(()=>document.getElementById("loaderOverlay").style.display="none",800);
+});
+</script>
+<button class="dark-toggle" onclick="toggleDark()">Dark Mode</button>
+<div class="container">
+<h1>Privacy Policy</h1>
+<h2>Introduction</h2>
+<p>
+        This Privacy Policy describes how <strong>BIBEKANANDA PAL</strong> and its affiliates (collectively referred to as 
+        “BIBEKANANDA PAL”, “we”, “our”, or “us”) collect, use, share, protect, and process your personal data through our 
+        website <strong>https://sevaclinicclothing.netlify.app</strong> (hereinafter referred to as the “Platform”).
+    </p>
+<p>
+        You may browse certain sections of the Platform without registering. We do not offer any product/service outside India, 
+        and your personal data is stored and processed primarily in India.
+    </p>
+<p>
+        By visiting the Platform, providing information, or using any service/product on the Platform, you expressly agree to be 
+        bound by this Privacy Policy, the Terms of Use, and applicable laws of India relating to data protection and privacy. 
+        If you do not agree, please do not use the Platform.
+    </p>
+<h2>Collection of Information</h2>
+<p>
+        We collect your personal data when you use our Platform, services, or interact with us. Information collected may include 
+        (but is not limited to): name, date of birth, address, phone number, email ID, identity proof, and address proof.
+    </p>
+<p>
+        Sensitive personal data may also be collected with your consent, such as bank account details, credit/debit card 
+        information, payment instruments, or biometric data (e.g., facial features for optional features).
+    </p>
+<p>
+        You may choose not to provide certain information, but this may limit your use of certain services.
+    </p>
+<p>
+        We may track user behaviour, preferences, and interactions, including aggregated analytics. We also collect information 
+        regarding your transactions on our Platform and partner platforms.
+    </p>
+<p>
+        When third-party partners collect your data, you are governed by their privacy policies. We are not responsible for their 
+        practices, and encourage you to read their privacy policies.
+    </p>
+<p>
+        If anyone contacts you claiming to be from “BIBEKANANDA PAL” asking for sensitive data like PINs, passwords, etc., 
+        NEVER share such information. Report it immediately to law enforcement if already shared.
+    </p>
+<h2>Usage of Information</h2>
+<p>
+        We use your personal data to:
+        <ul>
+<li>Provide requested services</li>
+<li>Assist sellers and partners in fulfilling orders</li>
+<li>Enhance customer experience</li>
+<li>Resolve disputes and troubleshoot issues</li>
+<li>Inform you about offers, products, and updates</li>
+<li>Customise your experience</li>
+<li>Prevent fraud and criminal activity</li>
+<li>Conduct market research and surveys</li>
+</ul>
+        You may opt out of marketing communications at any time.
+    </p>
+<h2>Sharing of Information</h2>
+<p>
+        We may share your personal data with:
+        <ul>
+<li>Group companies and affiliates</li>
+<li>Sellers and business partners</li>
+<li>Third-party service providers (logistics, payment gateways, reward programs, etc.)</li>
+</ul>
+</p>
+<p>
+        We may disclose information to comply with legal obligations, enforce our terms, prevent fraud, or protect safety.
+    </p>
+<p>
+        Data may also be shared with government or law enforcement agencies when legally required.
+    </p>
+<h2>Security Precautions</h2>
+<p>
+        We implement reasonable security practices to protect against unauthorized access, loss, or misuse. However, internet 
+        transmission is not fully secure, and inherent risks exist. Users are responsible for safeguarding their account credentials.
+    </p>
+<h2>Data Deletion &amp; Retention</h2>
+<p>
+        You may delete your account from your profile settings or contact us for assistance. Deletion may be delayed if pending 
+        orders, claims, or grievances exist.
+    </p>
+<p>
+        We retain data only as long as necessary or required under law. Certain anonymized data may be retained for analytics.
+    </p>
+<h2>Your Rights</h2>
+<p>
+        You may access, update, or correct your personal data using platform features.
+    </p>
+<h2>Consent</h2>
+<p>
+        By using the Platform, you consent to data collection, use, storage, sharing, and processing under this Privacy Policy.
+    </p>
+<p>
+        You may withdraw your consent by writing to the Grievance Officer, but withdrawal may restrict access to services.
+    </p>
+<h2>Changes to This Privacy Policy</h2>
+<p>
+        We may update this Privacy Policy periodically. Significant changes may be notified as required by applicable laws.
+    </p>
+<h2>Grievance Officer</h2>
+<p>
+<strong>Name of the Officer:</strong> Bibekananda Pal<br/>
+<strong>Designation:</strong> Owner<br/>
+<strong>Company Name:</strong> Seva Clinic<br/>
+<strong>Address:</strong> 10, Ground Floor, Udaynarayanpur, Udaynarayanpur Tarkeshwar Road, Near UCO Bank, Howrah, West Bengal, 711226<br/>
+<strong>Phone:</strong> 7278177592<br/>
+<strong>Email:</strong> bibekpal257151@gmail.com<br/>
+<strong>Support Timing:</strong> Monday – Friday (9:00 AM – 6:00 PM)
+    </p>
+</div>
+
+<a class="whatsapp-btn" href="https://wa.me/917278177592" target="_blank">
+  WhatsApp
+</a>
+
+
+<div id="quickViewModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.6);justify-content:center;align-items:center;z-index:9999;">
+ <div style="background:white;padding:20px;border-radius:12px;width:90%;max-width:400px;">
+   <img id="qv-img" src="" style="width:100%;border-radius:10px;" class='zoomable' onclick='openFull(this)'>
+   <h2 id="qv-title" style="margin-top:10px;"></h2>
+   <p id="qv-price" style="font-weight:700;color:#333;"></p>
+   <button onclick="closeQuickView()" 
+     style="padding:10px 20px;margin-top:15px;border:none;background:#111;color:white;border-radius:8px;">
+     Close
+   </button>
+ </div>
+</div>
+
+
+
+
+
+<script>
+function logoutUser(){ localStorage.removeItem('loggedIn'); alert('Logged out'); location='index.html'; }
+let u=localStorage.getItem('loggedIn');
+if(u){ document.write(''); }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
